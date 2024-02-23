@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+</head>
+<style type="text/css">
+body{
+	font:12px/1.5 Arial, Helvetica, sans-serif;
+	margin:0;
+	padding:0;
+	padding-top:10px;
+}
+
+h1{
+	margin:10px auto;
+	width:100%;
+	text-align:center;
+	font-size:36px;
+}
+
+h2{
+	font-size:20px;
+}
+
+div{
+	clear:both;
+	border:1px solid #999;
+	padding:10px;
+	margin:0 10px;
+	overflow:hidden;
+	height:45px;
+}
+
+img{
+	float:left;
+	padding-right:10px;
+}
+</style>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(init);
+
+function init()
+{
+	$("div").click(clickHandler);
+	showItem("overview1");	
+}
+
+function clickHandler()
+{
+	$(this).animate({height:"200px"},"slow");
+	$("div").not(this).animate({height:"45px"},"slow");
+	
+	var title = $(this).children("h2").text();
+	//alert(title);
+    sendCommand(title);
+}
+
+function showItem(showId)
+{
+	var target = $("#" + showId);
+	$(target).animate({height:"200px"},"slow");
+	$("div").not(target).animate({height:"45px"},"slow");	
+}
+    
+function sendCommand(title)
+{
+    document.location = "app:" + title;
+}
+
+</script>
+<body>
+
+<div id="overview1">
+	<img src="overview1.jpg"/>
+    <p>
+    	<h2>Folders for Apps</h2>
+        <p>
+        	Organize apps into folders for fast access to your favorites.
+        </p>
+    </p>
+</div>
+<div id="overview2">
+	<img src="overview2.jpg"/>
+    <p>
+    	<h2>Game Center</h2>
+        <p>
+        	Experience social gaming on your iPhone. Play multiplayer ganes, track achievements, and more.
+        </p>
+    </p>
+</div>
+<div id="overview3">
+	<img src="overview3.jpg"/>
+    <p>
+    	<h2>Mail</h2>
+        <p>
+        	A unified inbox and other new features make Mail more powerful than ever.
+        </p>
+    </p>
+</div>
+<div id="overview4">
+	<img src="overview4.jpg"/>
+    <p>
+    	<h2>Phone</h2>
+        <p>
+        	Built-in noise suppression makes phone calls easier to hear.
+        </p>
+    </p>
+</div>
+
+
+</body>
+</html>

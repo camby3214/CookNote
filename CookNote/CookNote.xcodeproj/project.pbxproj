@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB1F021E26B9762A00FAE8E5 /* INGREDINTSCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1F021C26B9762A00FAE8E5 /* INGREDINTSCell.swift */; };
+		DB1F021F26B9762A00FAE8E5 /* INGREDINTSCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB1F021D26B9762A00FAE8E5 /* INGREDINTSCell.xib */; };
+		DB1F022226B977B800FAE8E5 /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = DB1F022026B977B800FAE8E5 /* check.png */; };
+		DB1F022326B977B800FAE8E5 /* checkNo.png in Resources */ = {isa = PBXBuildFile; fileRef = DB1F022126B977B800FAE8E5 /* checkNo.png */; };
+		DB20B37926BC159600E51694 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB20B37826BC159600E51694 /* CollectionViewController.swift */; };
+		DB20B37B26BC1C3D00E51694 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB20B37A26BC1C3D00E51694 /* CollectionCell.swift */; };
+		DB222DEB26B598D7001DDEB2 /* heartfill.png in Resources */ = {isa = PBXBuildFile; fileRef = DB222DE926B598D7001DDEB2 /* heartfill.png */; };
+		DB312C6726B782D400E7A285 /* BUYCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB312C6526B782D400E7A285 /* BUYCell.swift */; };
+		DB312C6826B782D400E7A285 /* BUYCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB312C6626B782D400E7A285 /* BUYCell.xib */; };
+		DB43CD1326B1A49A007DCCCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB43CD1226B1A49A007DCCCF /* AppDelegate.swift */; };
+		DB43CD1526B1A49A007DCCCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB43CD1426B1A49A007DCCCF /* SceneDelegate.swift */; };
+		DB43CD1726B1A49A007DCCCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB43CD1626B1A49A007DCCCF /* ViewController.swift */; };
+		DB43CD1A26B1A49A007DCCCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB43CD1826B1A49A007DCCCF /* Main.storyboard */; };
+		DB43CD1C26B1A49C007DCCCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB43CD1B26B1A49C007DCCCF /* Assets.xcassets */; };
+		DB43CD1F26B1A49C007DCCCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB43CD1D26B1A49C007DCCCF /* LaunchScreen.storyboard */; };
+		DB43CD3826B1A523007DCCCF /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = DB43CD2E26B1A523007DCCCF /* FMResultSet.m */; };
+		DB43CD3926B1A523007DCCCF /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DB43CD3126B1A523007DCCCF /* FMDatabaseAdditions.m */; };
+		DB43CD3A26B1A523007DCCCF /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = DB43CD3226B1A523007DCCCF /* FMDatabasePool.m */; };
+		DB43CD3B26B1A523007DCCCF /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = DB43CD3426B1A523007DCCCF /* FMDatabase.m */; };
+		DB43CD3C26B1A523007DCCCF /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = DB43CD3726B1A523007DCCCF /* FMDatabaseQueue.m */; };
+		DB43CD4126B1A5AB007DCCCF /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DB43CD4026B1A5AB007DCCCF /* libsqlite3.0.tbd */; };
+		DB43CD4326B1A659007DCCCF /* Cookbook.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB43CD4226B1A659007DCCCF /* Cookbook.swift */; };
+		DB43CD4726B1A85E007DCCCF /* CookbooksDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB43CD4626B1A85E007DCCCF /* CookbooksDAO.swift */; };
+		DB43CD4926B1B284007DCCCF /* IngredientsListDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB43CD4826B1B284007DCCCF /* IngredientsListDAO.swift */; };
+		DB43CD4B26B1B2A1007DCCCF /* StepListDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB43CD4A26B1B2A1007DCCCF /* StepListDAO.swift */; };
+		DB43CD7D26B2969F007DCCCF /* cook.png in Resources */ = {isa = PBXBuildFile; fileRef = DB43CD7926B2969F007DCCCF /* cook.png */; };
+		DB43CD7E26B2969F007DCCCF /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = DB43CD7A26B2969F007DCCCF /* heart.png */; };
+		DB43CD7F26B2969F007DCCCF /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = DB43CD7B26B2969F007DCCCF /* home.png */; };
+		DB43CD8226B29927007DCCCF /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = DB43CD8126B29927007DCCCF /* list.png */; };
+		DB43CD8626B2A461007DCCCF /* FirstTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB43CD8526B2A461007DCCCF /* FirstTableViewController.swift */; };
+		DB43CD8826B2A5C4007DCCCF /* 小黃瓜.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DB43CD8726B2A5C4007DCCCF /* 小黃瓜.jpeg */; };
+		DB43CD8A26B2AE09007DCCCF /* a.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DB43CD8926B2AE09007DCCCF /* a.jpeg */; };
+		DB43CD9326B2D1E4007DCCCF /* FirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB43CD9126B2D1E4007DCCCF /* FirstTableViewCell.swift */; };
+		DB43CD9426B2D1E4007DCCCF /* FirstTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB43CD9226B2D1E4007DCCCF /* FirstTableViewCell.xib */; };
+		DB58C6E426B83BC90047ED78 /* DELETCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB58C6E226B83BC90047ED78 /* DELETCell.swift */; };
+		DB58C6E526B83BC90047ED78 /* DELETCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB58C6E326B83BC90047ED78 /* DELETCell.xib */; };
+		DB58C6E726B83C1C0047ED78 /* BuyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB58C6E626B83C1C0047ED78 /* BuyTableViewController.swift */; };
+		DB641A7726BD275A00DDF20E /* heart1.png in Resources */ = {isa = PBXBuildFile; fileRef = DB641A7626BD275A00DDF20E /* heart1.png */; };
+		DBCAB55F26B3A69D00FB3CD1 /* INGREDIRNYSCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCAB55D26B3A69D00FB3CD1 /* INGREDIRNYSCell.swift */; };
+		DBCAB56026B3A69D00FB3CD1 /* INGREDIRNYSCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBCAB55E26B3A69D00FB3CD1 /* INGREDIRNYSCell.xib */; };
+		DBCAB56626B3A92000FB3CD1 /* CookPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCAB56526B3A92000FB3CD1 /* CookPageViewController.swift */; };
+		DBCAB56B26B3FB8F00FB3CD1 /* STEPCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCAB56926B3FB8F00FB3CD1 /* STEPCell.swift */; };
+		DBCAB56C26B3FB8F00FB3CD1 /* STEPCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBCAB56A26B3FB8F00FB3CD1 /* STEPCell.xib */; };
+		DBCAB56E26B3FC5400FB3CD1 /* 步驟1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DBCAB56D26B3FC5300FB3CD1 /* 步驟1.jpeg */; };
+		DBCAB57026B4258800FB3CD1 /* photp.png in Resources */ = {isa = PBXBuildFile; fileRef = DBCAB56F26B4258800FB3CD1 /* photp.png */; };
+		DBCAB57726B4408F00FB3CD1 /* SecondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCAB57526B4408F00FB3CD1 /* SecondTableViewCell.swift */; };
+		DBCAB57826B4408F00FB3CD1 /* SecondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBCAB57626B4408F00FB3CD1 /* SecondTableViewCell.xib */; };
+		DBCE67D726B7CBE00011BE0E /* Cookbook.db in Resources */ = {isa = PBXBuildFile; fileRef = DBCE67D626B7CBE00011BE0E /* Cookbook.db */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DB1F021C26B9762A00FAE8E5 /* INGREDINTSCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INGREDINTSCell.swift; sourceTree = "<group>"; };
+		DB1F021D26B9762A00FAE8E5 /* INGREDINTSCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = INGREDINTSCell.xib; sourceTree = "<group>"; };
+		DB1F022026B977B800FAE8E5 /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
+		DB1F022126B977B800FAE8E5 /* checkNo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkNo.png; sourceTree = "<group>"; };
+		DB20B37826BC159600E51694 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		DB20B37A26BC1C3D00E51694 /* CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
+		DB222DE926B598D7001DDEB2 /* heartfill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heartfill.png; sourceTree = "<group>"; };
+		DB312C6526B782D400E7A285 /* BUYCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUYCell.swift; sourceTree = "<group>"; };
+		DB312C6626B782D400E7A285 /* BUYCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUYCell.xib; sourceTree = "<group>"; };
+		DB43CD0F26B1A49A007DCCCF /* CookNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB43CD1226B1A49A007DCCCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB43CD1426B1A49A007DCCCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DB43CD1626B1A49A007DCCCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DB43CD1926B1A49A007DCCCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB43CD1B26B1A49C007DCCCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB43CD1E26B1A49C007DCCCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB43CD2026B1A49C007DCCCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB43CD2C26B1A523007DCCCF /* CookNote-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CookNote-Bridging-Header.h"; sourceTree = "<group>"; };
+		DB43CD2D26B1A523007DCCCF /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		DB43CD2E26B1A523007DCCCF /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		DB43CD2F26B1A523007DCCCF /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		DB43CD3026B1A523007DCCCF /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		DB43CD3126B1A523007DCCCF /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		DB43CD3226B1A523007DCCCF /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		DB43CD3326B1A523007DCCCF /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		DB43CD3426B1A523007DCCCF /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		DB43CD3526B1A523007DCCCF /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		DB43CD3626B1A523007DCCCF /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		DB43CD3726B1A523007DCCCF /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		DB43CD4026B1A5AB007DCCCF /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		DB43CD4226B1A659007DCCCF /* Cookbook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cookbook.swift; sourceTree = "<group>"; };
+		DB43CD4626B1A85E007DCCCF /* CookbooksDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookbooksDAO.swift; sourceTree = "<group>"; };
+		DB43CD4826B1B284007DCCCF /* IngredientsListDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsListDAO.swift; sourceTree = "<group>"; };
+		DB43CD4A26B1B2A1007DCCCF /* StepListDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepListDAO.swift; sourceTree = "<group>"; };
+		DB43CD7926B2969F007DCCCF /* cook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cook.png; sourceTree = "<group>"; };
+		DB43CD7A26B2969F007DCCCF /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
+		DB43CD7B26B2969F007DCCCF /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		DB43CD8126B29927007DCCCF /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list.png; sourceTree = "<group>"; };
+		DB43CD8526B2A461007DCCCF /* FirstTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTableViewController.swift; sourceTree = "<group>"; };
+		DB43CD8726B2A5C4007DCCCF /* 小黃瓜.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "小黃瓜.jpeg"; sourceTree = "<group>"; };
+		DB43CD8926B2AE09007DCCCF /* a.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = a.jpeg; sourceTree = "<group>"; };
+		DB43CD9126B2D1E4007DCCCF /* FirstTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTableViewCell.swift; sourceTree = "<group>"; };
+		DB43CD9226B2D1E4007DCCCF /* FirstTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstTableViewCell.xib; sourceTree = "<group>"; };
+		DB58C6E226B83BC90047ED78 /* DELETCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DELETCell.swift; sourceTree = "<group>"; };
+		DB58C6E326B83BC90047ED78 /* DELETCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DELETCell.xib; sourceTree = "<group>"; };
+		DB58C6E626B83C1C0047ED78 /* BuyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyTableViewController.swift; sourceTree = "<group>"; };
+		DB641A7626BD275A00DDF20E /* heart1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart1.png; sourceTree = "<group>"; };
+		DBCAB55D26B3A69D00FB3CD1 /* INGREDIRNYSCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INGREDIRNYSCell.swift; sourceTree = "<group>"; };
+		DBCAB55E26B3A69D00FB3CD1 /* INGREDIRNYSCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = INGREDIRNYSCell.xib; sourceTree = "<group>"; };
+		DBCAB56526B3A92000FB3CD1 /* CookPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookPageViewController.swift; sourceTree = "<group>"; };
+		DBCAB56926B3FB8F00FB3CD1 /* STEPCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STEPCell.swift; sourceTree = "<group>"; };
+		DBCAB56A26B3FB8F00FB3CD1 /* STEPCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = STEPCell.xib; sourceTree = "<group>"; };
+		DBCAB56D26B3FC5300FB3CD1 /* 步驟1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "步驟1.jpeg"; sourceTree = "<group>"; };
+		DBCAB56F26B4258800FB3CD1 /* photp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photp.png; sourceTree = "<group>"; };
+		DBCAB57526B4408F00FB3CD1 /* SecondTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTableViewCell.swift; sourceTree = "<group>"; };
+		DBCAB57626B4408F00FB3CD1 /* SecondTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondTableViewCell.xib; sourceTree = "<group>"; };
+		DBCE67D626B7CBE00011BE0E /* Cookbook.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cookbook.db; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB43CD0C26B1A49A007DCCCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB43CD4126B1A5AB007DCCCF /* libsqlite3.0.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB20B37526BC151A00E51694 /* collectCell */ = {
+			isa = PBXGroup;
+			children = (
+				DB20B37A26BC1C3D00E51694 /* CollectionCell.swift */,
+			);
+			path = collectCell;
+			sourceTree = "<group>";
+		};
+		DB25B8AA26B580E000937C44 /* SpaceTable */ = {
+			isa = PBXGroup;
+			children = (
+				DBCAB57526B4408F00FB3CD1 /* SecondTableViewCell.swift */,
+				DBCAB57626B4408F00FB3CD1 /* SecondTableViewCell.xib */,
+				DBCAB56A26B3FB8F00FB3CD1 /* STEPCell.xib */,
+				DBCAB56926B3FB8F00FB3CD1 /* STEPCell.swift */,
+			);
+			path = SpaceTable;
+			sourceTree = "<group>";
+		};
+		DB312C6326B77CE500E7A285 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				DB20B37826BC159600E51694 /* CollectionViewController.swift */,
+				DBCAB56526B3A92000FB3CD1 /* CookPageViewController.swift */,
+				DB43CD8526B2A461007DCCCF /* FirstTableViewController.swift */,
+				DB58C6E626B83C1C0047ED78 /* BuyTableViewController.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		DB312C6426B7822600E7A285 /* BuyTable */ = {
+			isa = PBXGroup;
+			children = (
+				DB312C6526B782D400E7A285 /* BUYCell.swift */,
+				DB312C6626B782D400E7A285 /* BUYCell.xib */,
+				DB58C6E226B83BC90047ED78 /* DELETCell.swift */,
+				DB58C6E326B83BC90047ED78 /* DELETCell.xib */,
+				DB1F021C26B9762A00FAE8E5 /* INGREDINTSCell.swift */,
+				DB1F021D26B9762A00FAE8E5 /* INGREDINTSCell.xib */,
+			);
+			path = BuyTable;
+			sourceTree = "<group>";
+		};
+		DB43CD0626B1A49A007DCCCF = {
+			isa = PBXGroup;
+			children = (
+				DB43CD1126B1A49A007DCCCF /* CookNote */,
+				DB43CD1026B1A49A007DCCCF /* Products */,
+				DB43CD3F26B1A5AB007DCCCF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DB43CD1026B1A49A007DCCCF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB43CD0F26B1A49A007DCCCF /* CookNote.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB43CD1126B1A49A007DCCCF /* CookNote */ = {
+			isa = PBXGroup;
+			children = (
+				DB43CD2B26B1A4F8007DCCCF /* database */,
+				DB43CD2A26B1A4E9007DCCCF /* controllers */,
+				DB43CD2926B1A4DE007DCCCF /* fmdb */,
+				DB43CD2826B1A4CE007DCCCF /* models */,
+				DB43CD2726B1A4C0007DCCCF /* views */,
+				DB43CD2626B1A4B6007DCCCF /* images */,
+				DB43CD1226B1A49A007DCCCF /* AppDelegate.swift */,
+				DB43CD1426B1A49A007DCCCF /* SceneDelegate.swift */,
+				DB43CD1626B1A49A007DCCCF /* ViewController.swift */,
+				DB43CD1826B1A49A007DCCCF /* Main.storyboard */,
+				DB43CD1B26B1A49C007DCCCF /* Assets.xcassets */,
+				DB43CD1D26B1A49C007DCCCF /* LaunchScreen.storyboard */,
+				DB43CD2026B1A49C007DCCCF /* Info.plist */,
+			);
+			path = CookNote;
+			sourceTree = "<group>";
+		};
+		DB43CD2626B1A4B6007DCCCF /* images */ = {
+			isa = PBXGroup;
+			children = (
+				DB641A7626BD275A00DDF20E /* heart1.png */,
+				DB1F022026B977B800FAE8E5 /* check.png */,
+				DB1F022126B977B800FAE8E5 /* checkNo.png */,
+				DB222DE926B598D7001DDEB2 /* heartfill.png */,
+				DBCAB56F26B4258800FB3CD1 /* photp.png */,
+				DBCAB56D26B3FC5300FB3CD1 /* 步驟1.jpeg */,
+				DB43CD8926B2AE09007DCCCF /* a.jpeg */,
+				DB43CD8726B2A5C4007DCCCF /* 小黃瓜.jpeg */,
+				DB43CD8126B29927007DCCCF /* list.png */,
+				DB43CD7926B2969F007DCCCF /* cook.png */,
+				DB43CD7A26B2969F007DCCCF /* heart.png */,
+				DB43CD7B26B2969F007DCCCF /* home.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		DB43CD2726B1A4C0007DCCCF /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		DB43CD2826B1A4CE007DCCCF /* models */ = {
+			isa = PBXGroup;
+			children = (
+				DB43CD4226B1A659007DCCCF /* Cookbook.swift */,
+				DB43CD4626B1A85E007DCCCF /* CookbooksDAO.swift */,
+				DB43CD4826B1B284007DCCCF /* IngredientsListDAO.swift */,
+				DB43CD4A26B1B2A1007DCCCF /* StepListDAO.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		DB43CD2926B1A4DE007DCCCF /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				DB43CD3626B1A523007DCCCF /* FMDatabase.h */,
+				DB43CD3426B1A523007DCCCF /* FMDatabase.m */,
+				DB43CD3026B1A523007DCCCF /* FMDatabaseAdditions.h */,
+				DB43CD3126B1A523007DCCCF /* FMDatabaseAdditions.m */,
+				DB43CD3526B1A523007DCCCF /* FMDatabasePool.h */,
+				DB43CD3226B1A523007DCCCF /* FMDatabasePool.m */,
+				DB43CD3326B1A523007DCCCF /* FMDatabaseQueue.h */,
+				DB43CD3726B1A523007DCCCF /* FMDatabaseQueue.m */,
+				DB43CD2F26B1A523007DCCCF /* FMDB.h */,
+				DB43CD2D26B1A523007DCCCF /* FMResultSet.h */,
+				DB43CD2E26B1A523007DCCCF /* FMResultSet.m */,
+				DB43CD2C26B1A523007DCCCF /* CookNote-Bridging-Header.h */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		DB43CD2A26B1A4E9007DCCCF /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DB20B37526BC151A00E51694 /* collectCell */,
+				DB312C6326B77CE500E7A285 /* TableView */,
+				DB312C6426B7822600E7A285 /* BuyTable */,
+				DB25B8AA26B580E000937C44 /* SpaceTable */,
+				DBCAB56226B3A80600FB3CD1 /* SegTable */,
+				DBCAB56126B3A7C500FB3CD1 /* FirstTable */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		DB43CD2B26B1A4F8007DCCCF /* database */ = {
+			isa = PBXGroup;
+			children = (
+				DBCE67D626B7CBE00011BE0E /* Cookbook.db */,
+			);
+			path = database;
+			sourceTree = "<group>";
+		};
+		DB43CD3F26B1A5AB007DCCCF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB43CD4026B1A5AB007DCCCF /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBCAB56126B3A7C500FB3CD1 /* FirstTable */ = {
+			isa = PBXGroup;
+			children = (
+				DB43CD9126B2D1E4007DCCCF /* FirstTableViewCell.swift */,
+				DB43CD9226B2D1E4007DCCCF /* FirstTableViewCell.xib */,
+			);
+			path = FirstTable;
+			sourceTree = "<group>";
+		};
+		DBCAB56226B3A80600FB3CD1 /* SegTable */ = {
+			isa = PBXGroup;
+			children = (
+				DBCAB55D26B3A69D00FB3CD1 /* INGREDIRNYSCell.swift */,
+				DBCAB55E26B3A69D00FB3CD1 /* INGREDIRNYSCell.xib */,
+			);
+			path = SegTable;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB43CD0E26B1A49A007DCCCF /* CookNote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB43CD2326B1A49C007DCCCF /* Build configuration list for PBXNativeTarget "CookNote" */;
+			buildPhases = (
+				DB43CD0B26B1A49A007DCCCF /* Sources */,
+				DB43CD0C26B1A49A007DCCCF /* Frameworks */,
+				DB43CD0D26B1A49A007DCCCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CookNote;
+			productName = CookNote;
+			productReference = DB43CD0F26B1A49A007DCCCF /* CookNote.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB43CD0726B1A49A007DCCCF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					DB43CD0E26B1A49A007DCCCF = {
+						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
+					};
+				};
+			};
+			buildConfigurationList = DB43CD0A26B1A49A007DCCCF /* Build configuration list for PBXProject "CookNote" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB43CD0626B1A49A007DCCCF;
+			productRefGroup = DB43CD1026B1A49A007DCCCF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB43CD0E26B1A49A007DCCCF /* CookNote */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB43CD0D26B1A49A007DCCCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB43CD1F26B1A49C007DCCCF /* LaunchScreen.storyboard in Resources */,
+				DBCAB56E26B3FC5400FB3CD1 /* 步驟1.jpeg in Resources */,
+				DB641A7726BD275A00DDF20E /* heart1.png in Resources */,
+				DB1F021F26B9762A00FAE8E5 /* INGREDINTSCell.xib in Resources */,
+				DB58C6E526B83BC90047ED78 /* DELETCell.xib in Resources */,
+				DB43CD7D26B2969F007DCCCF /* cook.png in Resources */,
+				DBCAB57026B4258800FB3CD1 /* photp.png in Resources */,
+				DB43CD9426B2D1E4007DCCCF /* FirstTableViewCell.xib in Resources */,
+				DB43CD7F26B2969F007DCCCF /* home.png in Resources */,
+				DB43CD1C26B1A49C007DCCCF /* Assets.xcassets in Resources */,
+				DB1F022326B977B800FAE8E5 /* checkNo.png in Resources */,
+				DBCAB57826B4408F00FB3CD1 /* SecondTableViewCell.xib in Resources */,
+				DBCAB56026B3A69D00FB3CD1 /* INGREDIRNYSCell.xib in Resources */,
+				DB43CD8A26B2AE09007DCCCF /* a.jpeg in Resources */,
+				DB312C6826B782D400E7A285 /* BUYCell.xib in Resources */,
+				DB43CD7E26B2969F007DCCCF /* heart.png in Resources */,
+				DB43CD1A26B1A49A007DCCCF /* Main.storyboard in Resources */,
+				DB43CD8826B2A5C4007DCCCF /* 小黃瓜.jpeg in Resources */,
+				DB1F022226B977B800FAE8E5 /* check.png in Resources */,
+				DB222DEB26B598D7001DDEB2 /* heartfill.png in Resources */,
+				DBCAB56C26B3FB8F00FB3CD1 /* STEPCell.xib in Resources */,
+				DBCE67D726B7CBE00011BE0E /* Cookbook.db in Resources */,
+				DB43CD8226B29927007DCCCF /* list.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB43CD0B26B1A49A007DCCCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB43CD8626B2A461007DCCCF /* FirstTableViewController.swift in Sources */,
+				DB43CD4326B1A659007DCCCF /* Cookbook.swift in Sources */,
+				DB43CD4726B1A85E007DCCCF /* CookbooksDAO.swift in Sources */,
+				DB43CD4926B1B284007DCCCF /* IngredientsListDAO.swift in Sources */,
+				DB58C6E726B83C1C0047ED78 /* BuyTableViewController.swift in Sources */,
+				DBCAB56626B3A92000FB3CD1 /* CookPageViewController.swift in Sources */,
+				DB1F021E26B9762A00FAE8E5 /* INGREDINTSCell.swift in Sources */,
+				DBCAB57726B4408F00FB3CD1 /* SecondTableViewCell.swift in Sources */,
+				DB43CD1726B1A49A007DCCCF /* ViewController.swift in Sources */,
+				DB43CD3C26B1A523007DCCCF /* FMDatabaseQueue.m in Sources */,
+				DB43CD9326B2D1E4007DCCCF /* FirstTableViewCell.swift in Sources */,
+				DB20B37B26BC1C3D00E51694 /* CollectionCell.swift in Sources */,
+				DB20B37926BC159600E51694 /* CollectionViewController.swift in Sources */,
+				DB43CD4B26B1B2A1007DCCCF /* StepListDAO.swift in Sources */,
+				DBCAB55F26B3A69D00FB3CD1 /* INGREDIRNYSCell.swift in Sources */,
+				DB43CD3A26B1A523007DCCCF /* FMDatabasePool.m in Sources */,
+				DB43CD1326B1A49A007DCCCF /* AppDelegate.swift in Sources */,
+				DB43CD3B26B1A523007DCCCF /* FMDatabase.m in Sources */,
+				DB43CD3826B1A523007DCCCF /* FMResultSet.m in Sources */,
+				DB43CD1526B1A49A007DCCCF /* SceneDelegate.swift in Sources */,
+				DBCAB56B26B3FB8F00FB3CD1 /* STEPCell.swift in Sources */,
+				DB43CD3926B1A523007DCCCF /* FMDatabaseAdditions.m in Sources */,
+				DB58C6E426B83BC90047ED78 /* DELETCell.swift in Sources */,
+				DB312C6726B782D400E7A285 /* BUYCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DB43CD1826B1A49A007DCCCF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB43CD1926B1A49A007DCCCF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DB43CD1D26B1A49C007DCCCF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB43CD1E26B1A49C007DCCCF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB43CD2126B1A49C007DCCCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DB43CD2226B1A49C007DCCCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB43CD2426B1A49C007DCCCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 433J9U485V;
+				INFOPLIST_FILE = CookNote/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uuu.CookNote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CookNote/fmdb/CookNote-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB43CD2526B1A49C007DCCCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 433J9U485V;
+				INFOPLIST_FILE = CookNote/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uuu.CookNote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CookNote/fmdb/CookNote-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB43CD0A26B1A49A007DCCCF /* Build configuration list for PBXProject "CookNote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB43CD2126B1A49C007DCCCF /* Debug */,
+				DB43CD2226B1A49C007DCCCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB43CD2326B1A49C007DCCCF /* Build configuration list for PBXNativeTarget "CookNote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB43CD2426B1A49C007DCCCF /* Debug */,
+				DB43CD2526B1A49C007DCCCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB43CD0726B1A49A007DCCCF /* Project object */;
+}

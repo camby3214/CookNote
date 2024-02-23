@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b1d-IM-mjO">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--食譜-->
+        <scene sceneID="odS-aJ-J0W">
+            <objects>
+                <tableViewController id="2T6-bv-L8e" customClass="FirstTableViewController" customModule="CookNote" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="400" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="myJ-FH-mwH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.96462172270000002" green="0.96449321509999997" blue="0.95672506089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="detailDisclosureButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="400" id="Cli-93-80A">
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="400"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Cli-93-80A" id="e2T-gp-LNv">
+                                    <rect key="frame" x="0.0" y="0.0" width="356" height="400"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="2T6-bv-L8e" id="hz9-I3-QID"/>
+                            <outlet property="delegate" destination="2T6-bv-L8e" id="fyc-Su-54L"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="食譜" id="S0W-9O-IDS">
+                        <barButtonItem key="leftBarButtonItem" image="list.png" id="fl5-FW-Ary">
+                            <connections>
+                                <segue destination="3vP-sH-YaR" kind="show" id="Tq7-QY-wKI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="uPz-lu-G62" kind="show" identifier="next" id="4bN-C9-KA4"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QWv-rY-sXJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2475" y="-479"/>
+        </scene>
+        <!--購買清單-->
+        <scene sceneID="1uQ-qt-uq5">
+            <objects>
+                <tableViewController id="3vP-sH-YaR" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="bE5-4y-1aB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.96462172270000002" green="0.96449321509999997" blue="0.95672506089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="iVP-4L-uIE">
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iVP-4L-uIE" id="6OJ-sy-Wa7">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="3vP-sH-YaR" id="KG9-mx-44U"/>
+                            <outlet property="delegate" destination="3vP-sH-YaR" id="yE6-4G-6Nc"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="購買清單" id="4Fe-A7-cny"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nCl-ej-awu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3243" y="-52"/>
+        </scene>
+        <!--Cook Page View Controller-->
+        <scene sceneID="SV5-FN-7XL">
+            <objects>
+                <viewController id="uPz-lu-G62" customClass="CookPageViewController" customModule="CookNote" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9ob-no-lOm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="小黃瓜.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="EAu-Fg-gf0">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="316"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="a.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="oI1-bi-PWe">
+                                <rect key="frame" x="8" y="324" width="65" height="65"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="涼拌小黃瓜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r05-Nq-O8I">
+                                <rect key="frame" x="81" y="324" width="333" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Camby" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qdj-ph-hkE">
+                                <rect key="frame" x="81" y="362" width="333" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Yn4-Hk-wpY">
+                                <rect key="frame" x="0.0" y="394" width="414" height="32"/>
+                                <segments>
+                                    <segment title="食材"/>
+                                    <segment title="步驟"/>
+                                </segments>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="selectedSegmentTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="segment:" destination="uPz-lu-G62" eventType="valueChanged" id="cVN-tE-D9e"/>
+                                </connections>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vvc-TQ-KXn">
+                                <rect key="frame" x="0.0" y="428" width="414" height="466"/>
+                                <color key="backgroundColor" red="0.92567032579999997" green="0.91287374499999996" blue="0.87818890810000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexTrackingBackgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="400" id="QI9-mB-Gey">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="400"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QI9-mB-Gey" id="qVE-WN-2tB">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KSn-RC-EPA"/>
+                        <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.96470588239999999" green="0.96470588239999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="r05-Nq-O8I" firstAttribute="height" secondItem="oI1-bi-PWe" secondAttribute="height" multiplier="0.461538" id="6g1-nV-41E"/>
+                            <constraint firstItem="EAu-Fg-gf0" firstAttribute="leading" secondItem="KSn-RC-EPA" secondAttribute="leading" id="ANU-td-khv"/>
+                            <constraint firstItem="oI1-bi-PWe" firstAttribute="leading" secondItem="KSn-RC-EPA" secondAttribute="leading" constant="8" id="D6O-ic-ejs"/>
+                            <constraint firstItem="KSn-RC-EPA" firstAttribute="trailing" secondItem="Qdj-ph-hkE" secondAttribute="trailing" id="Djp-QJ-vde"/>
+                            <constraint firstItem="oI1-bi-PWe" firstAttribute="top" secondItem="EAu-Fg-gf0" secondAttribute="bottom" constant="8" id="Npj-px-5o3"/>
+                            <constraint firstItem="Qdj-ph-hkE" firstAttribute="top" secondItem="r05-Nq-O8I" secondAttribute="bottom" constant="8" symbolic="YES" id="O2i-Ks-7Ip"/>
+                            <constraint firstItem="vvc-TQ-KXn" firstAttribute="top" secondItem="Yn4-Hk-wpY" secondAttribute="bottom" constant="3" id="OXs-dG-gHN"/>
+                            <constraint firstItem="Qdj-ph-hkE" firstAttribute="leading" secondItem="oI1-bi-PWe" secondAttribute="trailing" constant="8" symbolic="YES" id="R1y-K5-ML8"/>
+                            <constraint firstItem="r05-Nq-O8I" firstAttribute="top" secondItem="EAu-Fg-gf0" secondAttribute="bottom" constant="8" symbolic="YES" id="R3r-TV-8MA"/>
+                            <constraint firstItem="vvc-TQ-KXn" firstAttribute="leading" secondItem="KSn-RC-EPA" secondAttribute="leading" id="TIa-hH-wZF"/>
+                            <constraint firstItem="r05-Nq-O8I" firstAttribute="leading" secondItem="oI1-bi-PWe" secondAttribute="trailing" constant="8" symbolic="YES" id="UCK-RM-XX1"/>
+                            <constraint firstItem="KSn-RC-EPA" firstAttribute="trailing" secondItem="r05-Nq-O8I" secondAttribute="trailing" id="ULM-YN-7eD"/>
+                            <constraint firstItem="KSn-RC-EPA" firstAttribute="trailing" secondItem="Yn4-Hk-wpY" secondAttribute="trailing" id="VhO-nM-WPp"/>
+                            <constraint firstItem="oI1-bi-PWe" firstAttribute="width" secondItem="EAu-Fg-gf0" secondAttribute="width" multiplier="0.157005" id="Xdr-Y2-Uzw"/>
+                            <constraint firstItem="EAu-Fg-gf0" firstAttribute="width" secondItem="9ob-no-lOm" secondAttribute="width" id="Xtx-sX-0BS"/>
+                            <constraint firstItem="EAu-Fg-gf0" firstAttribute="trailing" secondItem="KSn-RC-EPA" secondAttribute="trailing" id="ZkF-se-vUW"/>
+                            <constraint firstItem="Yn4-Hk-wpY" firstAttribute="leading" secondItem="KSn-RC-EPA" secondAttribute="leading" id="ayc-OK-3RN"/>
+                            <constraint firstItem="EAu-Fg-gf0" firstAttribute="top" secondItem="9ob-no-lOm" secondAttribute="top" id="dWh-cv-Vqn"/>
+                            <constraint firstItem="Yn4-Hk-wpY" firstAttribute="top" secondItem="oI1-bi-PWe" secondAttribute="bottom" constant="5" id="eLN-7V-zRv"/>
+                            <constraint firstItem="oI1-bi-PWe" firstAttribute="height" secondItem="EAu-Fg-gf0" secondAttribute="height" multiplier="0.205696" id="ldh-jB-kRZ"/>
+                            <constraint firstItem="vvc-TQ-KXn" firstAttribute="width" secondItem="KSn-RC-EPA" secondAttribute="width" id="m3U-tS-C2q"/>
+                            <constraint firstItem="EAu-Fg-gf0" firstAttribute="height" secondItem="9ob-no-lOm" secondAttribute="height" multiplier="0.352679" id="p3b-gf-gLz"/>
+                            <constraint firstItem="vvc-TQ-KXn" firstAttribute="trailing" secondItem="KSn-RC-EPA" secondAttribute="trailing" id="v41-Dt-nC7"/>
+                            <constraint firstItem="vvc-TQ-KXn" firstAttribute="height" secondItem="9ob-no-lOm" secondAttribute="height" multiplier="0.520089" id="wLd-UL-swm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="TEZ-zP-Xr5"/>
+                    <connections>
+                        <outlet property="author" destination="Qdj-ph-hkE" id="1rb-Vm-wwn"/>
+                        <outlet property="authorPhoto" destination="oI1-bi-PWe" id="dg4-Nj-mzn"/>
+                        <outlet property="food" destination="r05-Nq-O8I" id="ZvC-cj-y1e"/>
+                        <outlet property="foodPhoto" destination="EAu-Fg-gf0" id="pDg-l4-6Je"/>
+                        <outlet property="tableView" destination="vvc-TQ-KXn" id="3nm-Ic-nnj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IfQ-yo-1k8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3242" y="-830"/>
+        </scene>
+        <!--收藏-->
+        <scene sceneID="nsv-mK-vBW">
+            <objects>
+                <tableViewController id="Yir-wY-dll" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="NGW-mk-6nX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.96462172270000002" green="0.96449321509999997" blue="0.95672506089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="3JJ-DH-qqh">
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3JJ-DH-qqh" id="jqz-CR-EAz">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Yir-wY-dll" id="pkE-Mn-6cV"/>
+                            <outlet property="delegate" destination="Yir-wY-dll" id="5I0-r5-qdm"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="收藏" id="7tf-Zw-TPc">
+                        <barButtonItem key="leftBarButtonItem" image="list.png" id="NyI-Og-Lwj">
+                            <connections>
+                                <segue destination="3vP-sH-YaR" kind="show" id="Lkf-lX-aXV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ab8-kQ-Wly" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2474" y="192"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="jpg-E1-x8A">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="b1d-IM-mjO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AXa-R5-lZM">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="i2F-lq-sw2" kind="relationship" relationship="viewControllers" id="TtV-Qd-NX3"/>
+                        <segue destination="65a-87-Tcq" kind="relationship" relationship="viewControllers" id="EXl-nF-cKs"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2ye-sS-mid" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1059" y="-175"/>
+        </scene>
+        <!--食譜-->
+        <scene sceneID="5p0-uI-vd9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="i2F-lq-sw2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="食譜" image="cook.png" id="QrO-pg-SjQ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="j3X-d7-mxt">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2T6-bv-L8e" kind="relationship" relationship="rootViewController" id="1Mf-r0-QOY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DTU-3B-L8V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1831.8840579710147" y="-479.46428571428567"/>
+        </scene>
+        <!--收藏-->
+        <scene sceneID="fMF-xD-SXQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="65a-87-Tcq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="收藏" image="heart.png" id="xV7-0J-bRX"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="P6Z-UQ-ZlY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Yir-wY-dll" kind="relationship" relationship="rootViewController" id="aSd-oI-f0V"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rBI-sb-VYK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1831.8840579710147" y="191.51785714285714"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Tq7-QY-wKI"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="a.jpeg" width="100" height="100"/>
+        <image name="cook.png" width="20" height="20"/>
+        <image name="heart.png" width="20" height="20"/>
+        <image name="list.png" width="20" height="20"/>
+        <image name="小黃瓜.jpeg" width="1080" height="810"/>
+    </resources>
+</document>

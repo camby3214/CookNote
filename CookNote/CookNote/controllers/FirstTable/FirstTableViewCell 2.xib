@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="FirstTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="FirstTableViewCell" rowHeight="400" id="KGk-i7-Jjw" customClass="FirstTableViewCell" customModule="CookNote" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="小黃瓜.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Ipg-r6-2NN">
+                        <rect key="frame" x="-5" y="-15" width="424" height="315"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="a.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="gxM-pb-JTQ">
+                        <rect key="frame" x="10" y="310" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="9SH-TC-dWr"/>
+                            <constraint firstAttribute="width" constant="70" id="oZq-zd-FIc"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="菜名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZr-XS-hma">
+                        <rect key="frame" x="84" y="315" width="217" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2X-eY-ebe">
+                        <rect key="frame" x="301" y="312" width="98" height="75"/>
+                        <state key="normal" title=" 收藏" image="heart.png"/>
+                        <connections>
+                            <action selector="btm:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="XxL-j5-504"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="作者" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOm-mD-8NX">
+                        <rect key="frame" x="84" y="347" width="217" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Y2X-eY-ebe" secondAttribute="bottom" constant="13" id="9OY-xf-IHq"/>
+                    <constraint firstAttribute="trailing" secondItem="Ipg-r6-2NN" secondAttribute="trailing" constant="-5" id="AIe-uR-5X8"/>
+                    <constraint firstItem="Ipg-r6-2NN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="-5" id="ELa-YX-06h"/>
+                    <constraint firstItem="Y2X-eY-ebe" firstAttribute="leading" secondItem="IZr-XS-hma" secondAttribute="trailing" id="FWA-Pe-Dwy"/>
+                    <constraint firstItem="IZr-XS-hma" firstAttribute="leading" secondItem="gxM-pb-JTQ" secondAttribute="trailing" constant="4" id="Hps-ty-osk"/>
+                    <constraint firstItem="Y2X-eY-ebe" firstAttribute="top" secondItem="Ipg-r6-2NN" secondAttribute="bottom" constant="12" id="KTr-yM-Oh3"/>
+                    <constraint firstItem="IZr-XS-hma" firstAttribute="top" secondItem="Ipg-r6-2NN" secondAttribute="bottom" constant="15" id="Pe3-UO-IdT"/>
+                    <constraint firstItem="gxM-pb-JTQ" firstAttribute="top" secondItem="Ipg-r6-2NN" secondAttribute="bottom" constant="10" id="Rtq-CH-aPt"/>
+                    <constraint firstAttribute="trailing" secondItem="Y2X-eY-ebe" secondAttribute="trailing" constant="15" id="UW9-pv-s3X"/>
+                    <constraint firstItem="gxM-pb-JTQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="aKt-2G-ibo"/>
+                    <constraint firstItem="XOm-mD-8NX" firstAttribute="top" secondItem="IZr-XS-hma" secondAttribute="bottom" constant="8" symbolic="YES" id="d6U-Qp-1Tf"/>
+                    <constraint firstItem="XOm-mD-8NX" firstAttribute="leading" secondItem="gxM-pb-JTQ" secondAttribute="trailing" constant="4" id="itq-d4-hnF"/>
+                    <constraint firstItem="Ipg-r6-2NN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="-15" id="kCd-jH-ema"/>
+                    <constraint firstItem="Y2X-eY-ebe" firstAttribute="leading" secondItem="XOm-mD-8NX" secondAttribute="trailing" id="s4E-vD-dUa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" red="0.96462172270000002" green="0.96449321509999997" blue="0.95672506089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Ipg-r6-2NN" firstAttribute="width" secondItem="KGk-i7-Jjw" secondAttribute="width" multiplier="1.02415" id="PiB-VL-rN3"/>
+                <constraint firstItem="Ipg-r6-2NN" firstAttribute="height" secondItem="KGk-i7-Jjw" secondAttribute="height" multiplier="0.7875" id="iZM-ON-zpv"/>
+                <constraint firstItem="Y2X-eY-ebe" firstAttribute="width" secondItem="KGk-i7-Jjw" secondAttribute="width" multiplier="0.236715" id="mec-dK-vnk"/>
+            </constraints>
+            <connections>
+                <outlet property="authorName" destination="XOm-mD-8NX" id="3uk-YZ-IrY"/>
+                <outlet property="authorPhoto" destination="gxM-pb-JTQ" id="Kaw-KF-keD"/>
+                <outlet property="food" destination="IZr-XS-hma" id="cKd-pE-ozo"/>
+                <outlet property="img" destination="Ipg-r6-2NN" id="hO4-fq-YJU"/>
+            </connections>
+            <point key="canvasLocation" x="353.62318840579712" y="8.7053571428571423"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="a.jpeg" width="100" height="100"/>
+        <image name="heart.png" width="20" height="20"/>
+        <image name="小黃瓜.jpeg" width="1080" height="810"/>
+    </resources>
+</document>
